@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "event-stream": "^4.0.1",
+    "path": "^0.12.7",
+    "readdirp": "^3.6.0",
+    "require": "^2.4.20"
+  }
+}
