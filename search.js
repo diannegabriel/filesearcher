@@ -17,7 +17,7 @@ const getDir = (source) => {
         let file = fs.readFileSync(source + "/" + result, "utf8");
         let arr = file.split(/\r?\n/);
         console.log(
-          "\n\t File: " + dirSource[dirSource.length - 1] + "/" + result + "\n"
+          "\n\t File: \x1b[32m" + dirSource[dirSource.length - 1] + "/" + result + "\x1b[0m\n"
         );
         arr.forEach((line, idx) => {
           if (line.includes(argument)) {
@@ -53,5 +53,5 @@ const getDir = (source) => {
 const dir = process.cwd();
 const extension = ".xml"; //You can change the extension type here
 let argument = process.argv[2];
-console.log("\n" + argument + " is found in:");
+console.log("\n \x1b[47m\x1b[30m\x1b[1m" +argument + "\x1b[0m is found in:");
 getDir(dir);
