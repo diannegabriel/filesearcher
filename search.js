@@ -34,9 +34,13 @@ const getDir = (source) => {
                 res = newArr.find(el => {
                     return el.includes("<key>")
                 })
-              console.log(arr.indexOf(res, 0)+1, res)
-            }
-          } 
+                if (res === undefined) {
+                  console.log(idx+1, line)
+                } else {
+                  console.log(arr.indexOf(res, 0)+1, res)
+                }
+            } 
+          }
         });
       }
     } else if (lstatSync(path.join(source, result)).isDirectory()) {
