@@ -6,6 +6,7 @@ To use:
 
 Example:
 ```
+Console:
 node search.js 02_da_sbr_make_payment_new_cust
 
 Output:
